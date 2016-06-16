@@ -18,6 +18,7 @@ echo "$(date) : Count of patterns found -> ${COUNT}" >> $LOGFILE
 echo "$(date) : Starting pattern removal..." >> $LOGFILE
 #removing pattern
 sed s/00:00// <input.txt >output.txt
+#sed s/\+.*// <input.txt >output.txt
 echo "$(date) : Pattern removal done!" >> $LOGFILE
 echo "$(date) : Output file -> output.txt!" >> $LOGFILE
 
